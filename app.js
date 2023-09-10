@@ -32,9 +32,9 @@ function getRandomCatImage() {
 }
 
 btn.addEventListener("click",async () =>{
+    getRandomCatImage();
     let fact = await getFacts();
     let p= document.querySelector("#result");
     p.innerText=fact;
 
-    getRandomCatImage();
 });
